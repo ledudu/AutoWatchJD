@@ -3,7 +3,7 @@ name: "GitHub Actions TG Bot"
 on:
     push:
     schedule:
-        - cron: "00/06 * * * *"
+        - cron: "00/05 * * * *"
 
 jobs:
     bot:
