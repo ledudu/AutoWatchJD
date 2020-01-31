@@ -34,7 +34,7 @@ const main = async () =>
   //const weatherString = generateWeatherMessage(weatherData)
   //bot.sendMessage(process.env.TELEGRAM_CHAT_ID, "hellotest")
   const jdData = await getJDItemData();
-  console.log("main:" + jdData);
+  //console.log("main:" + jdData);
 }
 
 main()
