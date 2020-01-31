@@ -23,9 +23,9 @@ const jdItemUrl = new URL('https://item.jd.com/100011294530.html');
 const getJDItemData = async () =>
 {
   const resp = await fetch(jdItemUrl.toString());
-  const body = await resp.json();
-  console.log(body);
-  return body;
+  //const body = await resp.json();
+  console.log(resp);
+  return resp;
 }
 
 const main = async () =>
