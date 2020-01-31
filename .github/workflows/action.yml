@@ -1,8 +1,9 @@
 name: "GitHub Actions TG Bot"
 
 on:
+    push:
     schedule:
-        - cron: "0/5 * * * *"
+        - cron: "00/06 * * * *"
 
 jobs:
     bot:
