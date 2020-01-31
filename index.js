@@ -23,9 +23,9 @@ const jdItemUrl = new URL('https://item.jd.com/100011294530.html');
 const getJDItemData = async () =>
 {
   const resp = await fetch(jdItemUrl.toString());
-  //const body = await resp.json();
-  console.log(resp);
-  return resp;
+  const body = await resp.text();
+  console.log("body:" + body);
+  return body;
 }
 
 const main = async () =>
@@ -34,7 +34,7 @@ const main = async () =>
   //const weatherString = generateWeatherMessage(weatherData)
   //bot.sendMessage(process.env.TELEGRAM_CHAT_ID, "hellotest")
   const jdData = await getJDItemData();
-  console.log("main" + jdData);
+  console.log("main:" + jdData);
 }
 
 main()
